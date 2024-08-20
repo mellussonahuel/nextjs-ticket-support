@@ -1,0 +1,18 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 0rem; /* Espacio entre los enlaces */
+}
+
+.navLink {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff; /* Color del texto */
+}
+
+.navLink:not(:last-child)::after {
+  content: ' | ';
+  margin: 0.5rem;
+  color: #ffffff; /* Color del separador */
+}
